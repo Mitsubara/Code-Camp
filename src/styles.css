@@ -1,0 +1,166 @@
+/* General Styles */
+Body {
+    Font-family: ‘Arial’, sans-serif;
+    Margin: 0;
+    Padding: 0;
+    Background-color: #f9f9f9;
+}
+
+H1, h2, h3, h4, p {
+    Margin: 0;
+    Padding: 0;
+}
+
+.header, .section {
+    Padding: 50px;
+    Text-align: center;
+}
+
+.section {
+    Margin: 20px 0;
+    Background-color: #fff;
+    Border-radius: 5px;
+    Box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Background-color: #333;
+    Padding: 15px;
+}
+
+.navbar .logo h1 {
+    Color: white;
+    Font-size: 24px;
+}
+
+.nav-links {
+    List-style-type: none;
+    Display: flex;
+    Gap: 15px;
+}
+
+.nav-links li {
+    Display: inline;
+}
+
+.nav-links li a {
+    Color: white;
+    Text-decoration: none;
+    Padding: 10px;
+}
+
+.nav-links li a:hover {
+    Background-color: #555;
+    Border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown {
+    Position: relative;
+    Display: inline-block;
+}
+
+.dropdown-content {
+    Display: none;
+    Position: absolute;
+    Background-color: #333;
+    Box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    Color: white;
+    Padding: 12px 16px;
+    Text-decoration: none;
+    Display: block;
+}
+
+.dropdown-content a:hover {
+    Background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    Display: block;
+}
+
+.dropbtn {
+    Background-color: #333;
+    Color: white;
+    Padding: 10px;
+    Border: none;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    Display: grid;
+    Grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    Gap: 20px;
+}
+
+.portfolio-item {
+    Padding: 20px;
+    Background-color: #f4f4f4;
+    Border-radius: 5px;
+}
+
+.portfolio-item img {
+    Max-width: 100%;
+    Border-radius: 5px;
+}
+
+/* Blog Section */
+.blog-post {
+    Margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    Color: #333;
+}
+
+/* Contact Form */
+Form {
+    Max-width: 500px;
+    Margin: 0 auto;
+}
+
+.form-group {
+    Margin-bottom: 20px;
+}
+
+Input, textarea {
+    Width: 100%;
+    Padding: 10px;
+    Border: 1px solid #ddd;
+    Border-radius: 5px;
+}
+
+Button {
+    Background-color: #333;
+    Color: white;
+    Padding: 10px 20px;
+    Border: none;
+    Border-radius: 5px;
+    Cursor: pointer;
+}
+
+/* Footer */
+Footer {
+    Padding: 20px;
+    Background-color: #333;
+    Color: white;
+    Text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        Flex-direction: column;
+    }
+    .portfolio-grid {
+        Grid-template-columns: 1fr;
+    }
+}

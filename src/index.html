@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>John Doe – Web Developer</title>
+    <link rel=”stylesheet” href=”styles.css”>
+    <script defer src=”scripts.js”></script>
+</head>
+<body>
+    <header>
+        <nav class=”navbar”>
+            <div class=”logo”>
+                <h1>John Doe</h1>
+            </div>
+            <ul class=”nav-links”>
+                <li><a href=”#about”>About</a></li>
+                <li><a href=”#services”>Services</a></li>
+                <li><a href=”#portfolio”>Portfolio</a></li>
+                <li><a href=”#blog”>Blog</a></li>
+                <li><a href=”#contact”>Contact</a></li>
+            </ul>
+            <div class=”dropdown”>
+                <button class=”dropbtn”>More 
+                    <I class=”arrow down”></i>
+                </button>
+                <div class=”dropdown-content”>
+                    <a href=”#”>Testimonials</a>
+                    <a href=”#”>FAQ</a>
+                    <a href=”#”>Resources</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id=”about” class=”section about”>
+        <h2>About Me</h2>
+        <p>Hi, I’m John Doe, a passionate web developer with over 5 years of experience creating high-quality static and dynamic websites.</p>
+        <img src=”profile.jpg” alt=”Profile Picture” class=”profile-img”>
+    </section>
+
+    <section id=”services” class=”section services”>
+        <h2>Services</h2>
+        <div class=”services-grid”>
+            <div class=”service”>
+                <h3>Web Design</h3>
+                <p>Creating beautiful and responsive designs that enhance user experience.</p>
+            </div>
+            <div class=”service”>
+                <h3>Web Development</h3>
+                <p>Developing clean, maintainable, and efficient code for websites and web apps.</p>
+            </div>
+            <div class=”service”>
+                <h3>SEO Optimization</h3>
+                <p>Optimizing your website for search engines to increase visibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id=”portfolio” class=”section portfolio”>
+        <h2>Portfolio</h2>
+        <div class=”portfolio-grid”>
+            <div class=”portfolio-item”>
+                <img src=”project1.jpg” alt=”Project 1”>
+                <h4>Project 1</h4>
+                <p>A description of the project goes here.</p>
+            </div>
+            <div class=”portfolio-item”>
+                <img src=”project2.jpg” alt=”Project 2”>
+                <h4>Project 2</h4>
+                <p>A description of the project goes here.</p>
+            </div>
+            <div class=”portfolio-item”>
+                <img src=”project3.jpg” alt=”Project 3”>
+                <h4>Project 3</h4>
+                <p>A description of the project goes here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id=”blog” class=”section blog”>
+        <h2>Latest Blog Posts</h2>
+        <article class=”blog-post”>
+            <h3>How to Build a Static Website</h3>
+            <p>In this post, I’ll walk you through the process of building a static website from scratch.</p>
+            <a href=”#” class=”read-more”>Read More</a>
+        </article>
+        <article class=”blog-post”>
+            <h3>10 Web Development Tips for Beginners</h3>
+            <p>These tips will help you start your journey into web development.</p>
+            <a href=”#” class=”read-more”>Read More</a>
+        </article>
+    </section>
+
+    <section id=”contact” class=”section contact”>
+        <h2>Contact Me</h2>
+        <form action=”#” method=”POST”>
+            <div class=”form-group”>
+                <label for=”name”>Name</label>
+                <input type=”text” id=”name” name=”name” required>
+            </div>
+            <div class=”form-group”>
+                <label for=”email”>Email</label>
+                <input type=”email” id=”email” name=”email” required>
+            </div>
+            <div class=”form-group”>
+                <label for=”message”>Message</label>
+                <textarea id=”message” name=”message” rows=”5” required></textarea>
+            </div>
+            <button type=”submit”>Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe – All Rights Reserved</p>
+    </footer>
+</body>
+</html>
